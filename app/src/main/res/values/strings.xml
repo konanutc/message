@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DemoMessage</string>
+    <string name="nameapp">Messages</string>
+    <string name="newmessage">New Message</string>
+    <string name="namecontact">Type name contact</string>
+    <string name="body">Body</string>
+    <string name="number">Number</string>
+    <string name="sendmessage">Send message</string>
+    <string name="newmessages">New messages</string>
+    <string name="defaultapp">Set as default application</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+</resources>

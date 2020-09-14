@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_user1">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_name_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_toRightOf="@+id/iv_contact"
+        android:text="@string/namecontact"
+        android:textSize="@dimen/size20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_below="@id/tv_name_contact"
+        android:layout_marginRight="@dimen/size14sp"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_toRightOf="@+id/iv_contact"
+        android:text="@string/body"
+        android:textSize="@dimen/size16sp" />
+
+</RelativeLayout>

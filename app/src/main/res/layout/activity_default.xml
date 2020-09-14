@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_default"
+        android:text="@string/defaultapp"
+        android:layout_marginTop="@dimen/size52dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/size22sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"
+       android:gravity="center"
+       android:weightSum="10"
+       android:layout_marginBottom="@dimen/size52dp"
+       android:layout_height="wrap_content">
+       <Button
+           android:layout_width="wrap_content"
+           android:id="@+id/btn_reject"
+           android:text="@string/no"
+           android:background="@drawable/bo_vien"
+           android:layout_margin="@dimen/size5dp"
+           android:layout_weight="5"
+           android:layout_height="wrap_content">
+       </Button>
+       <Button
+           android:layout_width="wrap_content"
+           android:id="@+id/btn_agree"
+           android:text="@string/yes"
+           android:layout_margin="@dimen/size5dp"
+           android:background="@drawable/bo_vien_button_2"
+           android:layout_weight="5"
+           android:layout_height="wrap_content">
+       </Button>
+   </LinearLayout>
+
+</RelativeLayout>

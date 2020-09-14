@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:id="@+id/ln_message"
+          android:layout_alignParentRight="true"
+          android:backgroundTint="@color/message2"
+          android:background="@drawable/bo_vien_button"
+          android:orientation="vertical"
+          android:layout_marginRight="@dimen/size10dp"
+          android:layout_marginBottom="@dimen/size10dp"
+          android:layout_marginLeft="@dimen/size20dp"
+          android:layout_height="wrap_content" >
+          <TextView
+              android:layout_width="match_parent"
+              android:id="@+id/tv_list_message_2"
+              android:text="@string/newmessage"
+              android:textSize="@dimen/size16sp"
+              android:padding="@dimen/size10dp"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:id="@+id/tv_date"
+              android:text="@string/newmessage"
+              android:textSize="@dimen/size8sp"
+              android:gravity="center"
+              android:layout_height="wrap_content"/>
+      </LinearLayout>
+
+</RelativeLayout>

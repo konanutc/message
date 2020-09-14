@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ln_name_new"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:id="@+id/ib_back"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/newmessages"
+            android:textSize="@dimen/size22sp"
+            android:layout_weight="9.5"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/size10dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_below="@id/ln_name_new"
+       android:id="@+id/ln_search"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:text="To"
+           android:textSize="@dimen/size22sp"
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="@dimen/size10dp"
+           android:layout_marginRight="@dimen/size5dp"
+           android:layout_height="wrap_content" >
+       </TextView>
+
+       <EditText
+           android:id="@+id/ed_search"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/size10dp"
+           android:imeOptions="actionDone"
+           android:inputType="text"
+           android:layout_marginRight="@dimen/size10dp"
+           android:background="@color/white"
+           android:drawableRight="@drawable/ic_search"
+           android:drawablePadding="@dimen/size10dp"
+           android:hint="@string/namecontact"
+           android:padding="@dimen/size10dp"
+           android:maxLength="100"/>
+   </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_search">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_message"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_search"
+        android:layout_marginBottom="@dimen/size52dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ln_send_message"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_image_list_picked"
+            android:visibility="gone"
+            android:layout_margin="@dimen/size5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/ib_add_image"
+                android:background="@color/white"
+                android:src="@drawable/ic_add_image"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="9.5"
+                android:weightSum="10"
+                android:background="@drawable/bo_vien"
+                android:layout_margin="@dimen/size5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/ed_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9.5"
+                    android:background="@color/white"
+                    android:hint="@string/sendmessage"
+                    android:paddingLeft="@dimen/size20dp"
+                    android:paddingRight="@dimen/size20dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/ib_send_message"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_send_message"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_image_list_pick"
+            android:visibility="gone"
+            android:layout_margin="@dimen/size5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</RelativeLayout>
