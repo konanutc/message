@@ -70,7 +70,8 @@
         android:id="@+id/rv_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ln_search">
+        android:layout_below="@+id/ln_search"
+        android:layout_marginTop="1dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 
